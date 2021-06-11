@@ -1,0 +1,738 @@
+<html>
+    <head>
+        <title>Music Player</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Gursimrat Singh Rai">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha38-B4dIYHKNBc12p+WXckhzcICo0wJAoUBYZTY5qE0Id1GSseTk65+L38lXeVIU" crossorigin="ananymous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap|Pacifico">
+        <link rel="stylesheet" href="home.css" >
+    </head>
+    <body>
+
+        <!-- TOP NAVIGATION BAR -->
+        <nav>
+            <div id="logo-container">
+                <div id="logo" >
+                    <img src="../logo.png" alt="Logo">
+                </div>
+                <div id="title-name">
+                    <h4>Geet</h4>
+                </div>
+            </div>
+        
+            <div class="nav-link hide">
+                <h4> Home </h4>
+            </div>
+
+            <div class="nav-link hide">
+                <h4> Favourites</h4>
+            </div>
+            
+            <div class="nav-link hide">
+                <h4> Upgrade </h4>
+            </div>
+
+            <div id="search"> 
+                <i class="fas fa-search"></i>
+                <input type="text" name="search" placeholder="Search">
+                <i class="fas fa-microphone"></i>
+            </div>
+           
+            <div id="user-container">
+                <div id="bell" class="hide">
+                    <i class="fas fa-bell"></i>
+                </div>
+
+                <div id="user-profile-icon">
+                    <img  src="../image.jpg" alt="User Profile Image">
+                </div>
+            </div>
+            <div id="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+
+        <!-- Outermost container which divides into two parts i.e. main and aside -->
+        <div id="content-container">
+            
+            <!-- Main container contains albums,latest,station etc. -->
+            <div id="main-container">
+                
+                <!-- Latest Release Albums -->
+                <section id="new-release-albums">
+                   <div class="new-albums">
+                       <img class="" src="../images/albums/selena-gomez-marshmello(wolves).jpg" alt="album cover">
+                   </div>
+
+                   <div class="new-albums">
+                       <img  src="../images/albums/lover(tayler swift).png" alt="album cover">
+                   </div>
+
+                    <div class="new-albums">
+                        <img src="../images/albums/BillieEilish(when we all fall asleep).jpg" alt="album cover">
+                    </div> 
+                </section>
+
+                <!-- Latest Release Songs -->
+                <header id="latest-song-title">
+                    Latest Release
+                </header>
+                
+                <section id="latest-songs">
+                    
+                        <div class='latest-song'>
+                            <div class='latest-image'>
+                                <img src="../images/latest/Tere-Jeya-Hor-Disda-X-Meera-Ke-Prabhu.jpg" alt="Song Cover">
+                                <i class="far fa-play-circle"></i>
+                            </div>
+                            <div class='latest-name'>
+                                <h4>Tere Jeya</h4>
+                                <h5>by Sachet Tandon</h5>
+                            </div>
+                            <div class='dropdown '>
+                               
+                                <div class="dropbtn">
+                                    <i class="fas fa-ellipsis-h"></i>
+                                </div>
+
+                                <div class="ls-dropdown">
+                                    <a href=""><i class="fas fa-play"></i>Play Now</a>
+                                    <a href=""><i class="fas fa-plus"></i>Add to the queue</a>
+                                    <a href=""><i class="fas fa-file-medical"></i>Add To Favourites</a>
+                                    <a href=""><i class="fas fa-info-circle"></i>Get Info</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='latest-song'>
+                            <div class="latest-image">
+                                <img  src="../images/latest/Machayenge-3.jpg" alt="Song Cover">
+                                <i class="far fa-play-circle"></i>
+                            </div>
+                            <div class='latest-name'>
+                                <h4>Machayenge 3</h4>
+                                <h5>by Emiway Bantai </h5>
+                            </div>
+                            <div class='dropdown '>
+                               
+                                <div class="dropbtn">
+                                    <i class="fas fa-ellipsis-h"></i>
+                                </div>
+
+                                <div class="ls-dropdown">
+                                    <a href=""><i class="fas fa-play"></i>Play Now</a>
+                                    <a href=""><i class="fas fa-plus"></i>Add to the queue</a>
+                                    <a href=""><i class="fas fa-file-medical"></i>Add To Favourites</a>
+                                    <a href=""><i class="fas fa-info-circle"></i>Get Info</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class='latest-song '>
+                            <div class="latest-image">
+                                <img src="../images/latest/Ye-Faasla.jpg" alt="Song Cover">
+                                <i class="far fa-play-circle"></i>
+                            </div>
+                            <div class='latest-name'>
+                                <h4>Ye Faasla</h4>
+                                <h5>by Shaan</h5>
+                            </div>
+                            <div class='dropdown '>
+                               
+                                <div class="dropbtn">
+                                    <i class="fas fa-ellipsis-h"></i>
+                                </div>
+
+                                <div class="ls-dropdown">
+                                    <a href=""><i class="fas fa-play"></i>Play Now</a>
+                                    <a href=""><i class="fas fa-plus"></i>Add to the queue</a>
+                                    <a href=""><i class="fas fa-file-medical"></i>Add To Favourites</a>
+                                    <a href=""><i class="fas fa-info-circle"></i>Get Info</a>
+                                </div>
+                            </div>
+                        </div> 
+                        
+                        <div class='latest-song '>
+                            <div class="latest-image">
+                                <img src="../images/latest/Tum-Bewafa-Ho.jpg" alt="Song Cover">
+                                <i class="far fa-play-circle"></i>
+                            </div>
+                            <div class='latest-name'>
+                                <h4>Tum Bewafa Ho</h4>
+                                <h5>by Payel Dev </h5>
+                            </div>
+                            <div class='dropdown '>
+                               
+                                <div class="dropbtn">
+                                    <i class="fas fa-ellipsis-h"></i>
+                                </div>
+
+                                <div class="ls-dropdown">
+                                    <a href=""><i class="fas fa-play"></i>Play Now</a>
+                                    <a href=""><i class="fas fa-plus"></i>Add to the queue</a>
+                                    <a href=""><i class="fas fa-file-medical"></i>Add To Favourites</a>
+                                    <a href=""><i class="fas fa-info-circle"></i>Get Info</a>
+                                </div>
+                            </div>
+                        </div>
+
+                </section>
+
+                <!-- Popular Artists -->
+                <header>
+                    Popular Artists
+                </header>
+
+                <section id="popular-artists-container">
+
+                    <div class=" artist">
+                        <div class="artist-image">
+                           <img src="../images/artists/guru_randhawa.jpg" alt="Artist Picture">
+                           <i class="fas fa-play"></i>
+                        </div>
+                        <div class="artist-name">
+                             <h4> Guru Randhawa </h4>
+                        </div>
+
+                    </div>
+
+                    <div class="artist ">
+                        <div class="artist-image">
+                           <img src="../images/artists/Neha_Kakkar.jpg" alt="Artist Picture">
+                           <i class="fas fa-play"></i>
+                        </div>
+                        <div class="artist-name">
+                                <h4>Neha Kakkar</h4>
+                        </div>
+
+                    </div>
+
+                    <div class="artist">
+                        <div class="artist-image">
+                           <img src="../images/artists/Arijit_Singh.jpg" alt="Artist Picture">
+                           <i class="fas fa-play"></i>
+                        </div>
+                        <div class="artist-name">
+                            <h4>Arijit Singh</h4>
+                        </div>
+
+                    </div>
+
+                    <div class="artist">
+                        <div class="artist-image">
+                           <img src="../images/artists/Sidhu_Moose_Wala.jpg" alt="Artist Picture">
+                           <i class="fas fa-play"></i>
+                        </div>
+                        <div class="artist-name">
+                           <h4>Sidhu Moose Wala</h4> 
+                        </div>
+
+                    </div>
+
+                    <div class="artist">
+                        <div class="artist-image">
+                           <img src="../images/artists/Lata_Mangeshkar.jpg" alt="Artist Picture">
+                           <i class="fas fa-play"></i>
+                        </div>
+                        <div class="artist-name">
+                            <h4>Lata Mangeshkar</h4>
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- Various Stations/Radio Channels -->
+                <header>
+                    Stations
+                </header>
+
+                <section id='stations'>
+                     <div id='stations-logo'>
+                          <img class="" src="../station.png" alt="Station Category Icon">
+                     </div>
+
+                     <div class="station">
+                        <img  src="../images/stations/Workout.jpg" alt="Station Category Name">
+                        <i class="fas fa-play"></i>
+                     </div>
+
+                     <div class="station">
+                        <img src="../images/stations/It'sAParty.jpg" alt="Station Category Name">
+                        <i class="fas fa-play"></i>
+                     </div>
+
+                     <div class="station">
+                        <img src="../images/stations/JaiShriKrishna.jpg" alt="Station Category Name">
+                        <i class="fas fa-play"></i>
+                     </div>
+
+                     <div class="station">
+                        <img src="../images/stations/FeelingSad.jpg" alt="Station Category Name">
+                        <i class="fas fa-play"></i>
+                     </div>
+
+                </section>
+
+                <!-- Different Category -->
+                <section id="category-container">
+
+                    <div class="category">
+                        <img src="../images/category/party.jpg" alt=" Category Name">
+                        <h3>
+                              Party
+                        </h3>
+                    </div>
+
+                    <div class="category">
+                        <img src="../images/category/electronic.jfif" alt=" Category Name">
+                        <h3>
+                              Electronic
+                        </h3>
+                    </div>
+
+                    <div class="category">
+                        <img src="../images/category/roadtrip.jpg" alt=" Category Name">
+                        <h3>
+                              Road Trip
+                        </h3>
+                    </div>
+
+
+                </section>
+
+                <!-- Latest Release English Songs -->
+                <header>
+                    Latest English
+                </header>
+
+                <section id="english-songs">
+
+                    <div class="english-song">
+
+                        <div class="english-image">
+                            <img src="../images/english/Justice.jpg" alt="Song Cover">
+        
+                            <i class="fas fa-play"></i>
+                        </div>
+
+                        <div>
+                            <h4>Justice</h4>
+                            <h5>by Justin Bieber</h5>    
+                        </div>
+                    
+                    </div>
+
+                    <div class="english-song">
+
+                        <div class="english-image">
+                            <img src="../images/english/Faded.jpg" alt="Song Cover">
+                            <i class="fas fa-play"></i>
+                        </div>
+
+                        <div>
+                            <h4>Faded</h4>
+                            <h5>by Alan Walker</h5>    
+                        </div>
+
+                            
+                    </div>
+
+                    <div class="english-song">
+
+                        <div class="english-image">
+                            <img src="../images/english/Memories.jpg" alt="Song Cover">
+        
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div>
+                            <h4>Memories</h4>
+                            <h5>by Maroon 5</h5>
+                        </div>
+
+                    </div>
+
+                    <div class="english-song ">
+
+                        <div class='english-image'>
+                            <img src="../images/english/Taki-Taki.jpg" alt="Song Cover">
+        
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div>
+                            <h4>Taki Taki</h4>
+                            <h5>by DJ Snake</h5>
+                        </div>
+
+                    </div>
+
+                    <div class="english-song">
+
+                        <div class='english-image'>
+                            <img src="../images/english/Evolve.jpg" alt="Song Cover">
+        
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div>
+                            <h4>Believer</h4>
+                            <h5>by Imagine Dragons</h5>
+                        </div>
+
+                    </div>
+        
+                </section>
+
+                <!-- Latest Release Hindi Songs -->
+                <header>
+                    Latest Hindi
+                </header>
+
+                <section id="hindi-songs">
+
+                    <div class="hindi-song">
+
+                        <div class='hindi-image'>
+                            <img src="../images/hindi/Tera-Suit.jpg" alt="Song Cover">
+        
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div>
+                            <h4>Tera Suit</h4>
+                            <h5> by Tony Kakkar</h5>
+                        </div>
+
+                    </div>
+
+                    <div class="hindi-song">
+
+                        <div class='hindi-image'>
+                            <img src="../images/hindi/Mazaa.jpg" alt="Song Cover">
+        
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div>
+                            <h4>Mazaa</h4>
+                            <h5> by B Praak</h5>
+                        </div>
+
+                    </div>
+                    
+                    <div class="hindi-song">
+
+                        <div class='hindi-image'>
+                            <img src="../images/hindi/Aashiqui-2.jpg" alt="Song Cover">
+        
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div>
+                            <h4>Tum Hi Ho</h4>
+                            <h5> by Arijit Singh</h5>
+                        </div>
+
+                    </div>
+
+                    <div class="hindi-song mh-1r">
+
+                        <div class='hindi-image'>
+                            <img src="../images/hindi/Genda-Phool.jpg" alt="Song Cover">
+        
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div>
+                            <h4>Genda Phool</h4>
+                            <h5>by Badshah </h5>
+                        </div>
+
+                    </div>
+
+                    <div class="hindi-song">
+
+                        <div class='hindi-image'>
+                            <img src="../images/hindi/Dil-Tod-Ke.jpg" alt="Song Cover">
+        
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div>
+                            <h4>Dil Tod Ke</h4>
+                            <h5>by B Praak</h5>
+                        </div>
+
+                    </div>
+        
+                </section>
+        
+            </div>
+            
+            <!-- Aside Section for Playlist/Favourites -->
+            <aside>
+                <div id='aside-nav'>
+                    <div id='aside-title'>
+                        <h2>My Playlist</h2>
+                    </div>
+                    <div class='dropdown '>
+                        <div class="dropbtn">
+                            <i class="fas fa-ellipsis-h"></i></label>
+                        </div>
+                         <div class="ls-dropdown">
+                            <a href="">My Playlist</a>
+                            <a href="">Favourites</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='list'>
+        
+                    <div class='serial'>
+                        <h4>
+                            01
+                        </h4>
+                    </div>
+
+                    <div class="list-image">
+                        <img  src="../images/english/Evolve.jpg" alt="Song Cover">
+                        <i class="far fa-play-circle"></i>
+                    </div>
+                    
+                    <div class="list-name">
+                        <h4>Believer</h4>
+                        <h5>by Imagine Dragons</h5>
+                    </div>
+    
+                    <div class=".list-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+    
+                </div>
+
+                <div class='list'>
+        
+                    <div class='serial'>
+                        <h4>
+                            02
+                        </h4>
+                    </div>
+
+                    <div class="list-image">
+                        <img  src="../images/english/Taki-Taki.jpg" alt="Song Cover">
+                        <i class="far fa-play-circle"></i>
+                    </div>
+                    
+                    <div class="list-name">
+                        <h4>Taki Taki</h4>
+                        <h5>by DJ Snake</h5>
+                    </div>
+    
+                    <div class="list-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+    
+                </div>
+                
+                <div class='list'>
+        
+                    <div class='serial'>
+                        <h4>
+                            03
+                        </h4>
+                    </div>
+
+                    <div class="list-image">
+                        <img src="../images/english/Justice.jpg" alt="Song Cover">
+                        <i class="far fa-play-circle"></i>
+                    </div>
+                    
+                    <div class="list-name">
+                        <h4>Peaches</h4>
+                        <h5>Justice by Justin Bieber</h5>
+                    </div>
+    
+                    <div class="list-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+    
+                </div>
+                
+                <div class='list'>
+        
+                    <div class='serial'>
+                        <h4>
+                            04
+                        </h4>
+                    </div>
+
+                    <div class="list-image">
+                        <img src="../images/hindi/Dil-Tod-Ke.jpg" alt="Song Cover">
+                        <i class="far fa-play-circle"></i>
+                    </div>
+                    
+                    <div class="list-name">
+                        <h4>Dil Tod Ke</h4>
+                        <h5>by B Praak</h5>
+                    </div>
+    
+                    <div class=" list-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+    
+                </div>
+                
+                <div class='list'>
+        
+                    <div class='serial'>
+                        <h4>
+                            05
+                        </h4>
+                    </div>
+
+                    <div class="list-image">
+                        <img src="../images/hindi/Aashiqui-2.jpg" alt="Song Cover">
+                        <i class="far fa-play-circle"></i>
+                    </div>
+                    
+                    <div class="list-name">
+                        <h4>Tum Hi Ho</h4>
+                        <h5>Arijit Singh</h5>
+                    </div>
+    
+                    <div class="list-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+    
+                </div>
+                
+                <div class='list'>
+        
+                    <div class='serial'>
+                        <h4>
+                            06
+                        </h4>
+                    </div>
+
+                    <div class="list-image">
+                        <img src="../images/latest/Machayenge-3.jpg" alt="Song Cover">
+                        <i class="far fa-play-circle"></i>
+                    </div>
+                    
+                    <div class="list-name">
+                        <h4>Machayenge 3</h4>
+                        <h5>by Emiway Bantai</h5>
+                    </div>
+    
+                    <div class="list-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+    
+                </div>
+                
+                <div class='list'>
+        
+                    <div class='serial'>
+                        <h4>
+                            07
+                        </h4>
+                    </div>
+
+                    <div class="list-image">
+                        <img src="../images/latest/Ye-Faasla.jpg" alt="Song Cover">
+                        <i class="far fa-play-circle"></i>
+                    </div>
+                    
+                    <div class="list-name">
+                        <h4>Ye Faasla</h4>
+                        <h5>by Shaan</h5>
+                    </div>
+    
+                    <div class="list-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+    
+                </div>
+                
+                <div class='list'>
+        
+                    <div class='serial'>
+                        <h4>
+                            08
+                        </h4>
+                    </div>
+
+                    <div class="list-image">
+                        <img src="../images/albums/lover(tayler swift).png" alt="Song Cover">
+                        <i class="far fa-play-circle"></i>
+                    </div>
+                    
+                    <div class="list-name">
+                        <h4>Lover</h4>
+                        <h5>by Tayler Swift</h5>
+                    </div>
+    
+                    <div class="list-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+    
+                </div>
+                
+                <div class='list'>
+        
+                    <div class='serial'>
+                        <h4>
+                            09
+                        </h4>
+                    </div>
+
+                    <div class="list-image">
+                        <img src="../images/albums/selena-gomez-marshmello(wolves).jpg" alt="Song Cover">
+                        <i class="far fa-play-circle"></i>
+                    </div>
+                    
+                    <div class="list-name">
+                        <h4>Wolves</h4>
+                        <h5>by Selena Gomez X Marshmello</h5>
+                    </div>
+    
+                    <div class="heart-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+    
+                </div>
+
+            </aside>
+
+        </div>
+
+        <!-- Bottom Music Player Container -->
+
+        <footer id='play-container'>
+
+            <div id="bar"></div>
+
+             <div id='play-image-container'>
+                <div id='play-image'>
+                    <div >
+                        <img src="../images/albums/lover(tayler swift).png" alt="Song Cover">
+                    </div>
+                    <div id='play-name'>
+                        <h4>Lover</h4>
+                        <h5>by Tayler Swift</h5>
+                    </div>
+                </div>
+
+                <div id='play-icon'>
+                    <i class="fas fa-random hide"></i>
+                    <i class="fas fa-step-backward hide"></i>
+                    <i class="fas fa-play"></i>
+                    <i class="fas fa-step-forward hide"></i>
+                    <i class="fas fa-undo hide"></i>
+                </div>
+                <div id='sound-icon' class='hide'>
+                    <i class="fas fa-volume-up"></i>
+                    <i class="far fa-heart "></i>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+            
+            </div>
+        </footer>
+        
+    </body>
+</html>

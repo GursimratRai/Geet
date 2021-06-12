@@ -193,7 +193,9 @@ article{
     border-radius: 3px;
     background-color: rgb(36, 36, 160);
 }
-
+#social div:hover{
+    background-color: red;
+}
 /***********************Play List*************/
 #play-list{
     margin:1rem;
